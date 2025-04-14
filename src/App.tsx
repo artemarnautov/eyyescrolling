@@ -30,18 +30,22 @@ const newsItems: NewsItem[] = [
 function App() {
   return (
   <div className="min-h-screen bg-black text-white px-4 py-10">
-    <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 tracking-tight">
-      EYYE
-    </h1>
+    <div className="max-w-4xl mx-auto">
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 tracking-tight">
+        EYYE
+      </h1>
 
-    <CategoryScroller />
+      <CategoryScroller />
 
-    <div className="flex flex-col gap-8 max-w-2xl mx-auto mt-6">
-      {newsItems.map((item) => (
-        <NewsCard key={item.id} item={item} />
-      ))}
+      <div className="flex flex-col gap-8 mt-6">
+        {newsItems.map((item) => (
+          <NewsCard key={item.id} item={item} />
+        ))}
+      </div>
     </div>
   </div>
+);
+
 );
 
 }

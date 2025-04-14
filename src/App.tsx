@@ -28,7 +28,7 @@ const newsItems: NewsItem[] = [
 ];
 
 function App() {
-  return (
+ return (
   <div className="min-h-screen bg-black text-white px-4 py-10">
     <div className="max-w-4xl mx-auto">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 tracking-tight">
@@ -42,8 +42,11 @@ function App() {
           <NewsCard key={item.id} item={item} />
         ))}
       </div>
-    </div>
-  </div>
+      
+    </div>  
+  </div>    
+);
+
 );
 
 );

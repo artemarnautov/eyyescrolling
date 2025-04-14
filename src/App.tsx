@@ -1,6 +1,7 @@
 import React from 'react';
 import NewsCard from './components/NewsCard';
 import { NewsItem } from './types';
+import CategoryScroller from './components/CategoryScroller';
 
 const newsItems: NewsItem[] = [
   {
@@ -29,13 +30,18 @@ const newsItems: NewsItem[] = [
 function App() {
   return (
     <div className="min-h-screen bg-black text-white px-4 py-10">
-      <h1 className="text-3xl md:text-4xl font-bold text-center mb-10 tracking-tight">
-        EYYE
-      </h1>
-      <div className="flex flex-col gap-8 max-w-2xl mx-auto">
-        {newsItems.map((item) => (
-          <NewsCard key={item.id} item={item} />
-        ))}
+      <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 tracking-tight">
+  EYYE
+</h1>
+
+<CategoryScroller />
+
+<div className="flex flex-col gap-8 max-w-2xl mx-auto mt-6">
+  {newsItems.map((item) => (
+    <NewsCard key={item.id} item={item} />
+  ))}
+</div>
+
       </div>
     </div>
   );

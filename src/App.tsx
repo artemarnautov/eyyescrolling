@@ -37,7 +37,7 @@ function App() {
   <img
     src="/IMG_1425.PNG"
     alt="EYYE"
-    className="h-12 md:h-16 object-contain"
+    className="h-20 md:h-28 object-contain"
   />
 </div>
 

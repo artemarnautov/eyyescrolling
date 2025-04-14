@@ -10,7 +10,7 @@ function NewsCard({ item }: NewsCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="relative overflow-hidden rounded-xl backdrop-blur-xl bg-white/5 border border-white/10 shadow-lg transition-all duration-300 hover:shadow-xl hover:bg-white/8 group">
+    <div className="relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 shadow-2xl transition-all duration-300 hover:bg-white/15">
       <div className="aspect-video overflow-hidden">
         <img
           src={item.image}
@@ -19,17 +19,17 @@ function NewsCard({ item }: NewsCardProps) {
         />
       </div>
       <div className="p-6">
-        <h2 className="text-2xl font-semibold text-white mb-4">{item.headline}</h2>
+        <h2 className="text-xl font-semibold text-white mb-3">{item.headline}</h2>
         <div
-          className={`overflow-hidden transition-all duration-300 ease-in-out ${
-            isExpanded ? 'max-h-96' : 'max-h-0'
+          className={`overflow-hidden text-white/80 text-sm leading-relaxed transition-all duration-300 ease-in-out ${
+            isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <p className="text-gray-300 mb-4">{item.content}</p>
+          <p className="mb-4">{item.content}</p>
         </div>
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="flex items-center gap-2 px-4 py-2 rounded-lg bg-white/10 hover:bg-white/15 text-white transition-all duration-300"
+          className="flex items-center gap-2 px-4 py-2 mt-2 rounded-lg bg-white/10 hover:bg-white/20 text-sm text-white/90 transition-all duration-200"
         >
           {isExpanded ? (
             <>

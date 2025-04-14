@@ -29,7 +29,7 @@ function NewsCard({ item }: NewsCardProps) {
         </div>
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="flex items-center gap-2 px-4 py-2 mt-2 rounded-lg bg-white/10 hover:bg-white/20 text-sm text-white/90 transition-all duration-200"
+          className="flex items-center gap-2 px-4 py-2 mt-2 rounded-full bg-[#1DB954] hover:bg-[#1ed760] text-sm text-black font-semibold transition-all duration-200"
         >
           {isExpanded ? (
             <>
@@ -49,3 +49,4 @@ function NewsCard({ item }: NewsCardProps) {
 }
 
 export default NewsCard;
+

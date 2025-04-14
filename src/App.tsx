@@ -13,14 +13,14 @@ const newsItems: NewsItem[] = [
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1526526526350-7da7584cf5eb?auto=format&fit=crop&q=80&w=1200',
+    image: 'https://images.unsplash.com/photo-1508780709619-79562169bc64?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     headline: 'Revolutionary AI System Helps Predict Climate Changes',
     content:
       'Scientists have developed a new artificial intelligence system capable of predicting climate changes with unprecedented accuracy.',
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-14864606146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200',
+    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     headline: 'Global Tech Summit Announces Revolutionary Innovation',
     content:
       'The annual Global Tech Summit has unveiled several groundbreaking innovations that promise to reshape the technology landscape.',

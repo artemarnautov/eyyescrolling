@@ -1,6 +1,7 @@
 import React from 'react';
 import NewsCard from './components/NewsCard';
 import CategoryScroller from './components/CategoryScroller';
+import SearchBar from './components/SearchBar';
 import { NewsItem } from './types';
 
 const newsItems: NewsItem[] = [
@@ -34,6 +35,9 @@ function App() {
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 tracking-tight">
           EYYE
         </h1>
+         <div className="mb-6">
+          <SearchBar />
+        </div>
         <CategoryScroller />
         <div className="flex flex-col gap-8 mt-6">
           {newsItems.map((item) => (

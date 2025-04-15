@@ -72,7 +72,7 @@ function NewsCard({ item }: NewsCardProps) {
 
           <button
             onClick={() => setIsChatOpen(!isChatOpen)}
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#37957A] hover:bg-[#48a691] text-sm text-white font-semibold transition-all duration-200"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#53BDEB] hover:bg-[#6fdfff] text-sm text-white font-semibold transition-all duration-200"
           >
             <MessageCircle className="w-4 h-4" />
             <span>Comment</span>
@@ -86,7 +86,7 @@ function NewsCard({ item }: NewsCardProps) {
                 key={index}
                 className={`w-fit px-4 py-2 rounded-xl text-sm ${
                   msg.sender === 'user'
-                    ? 'ml-auto bg-[#37957A] text-white'
+                    ? 'ml-auto bg-[#53BDEB] text-white'
                     : 'bg-[#143426] text-white'
                 }`}
               >

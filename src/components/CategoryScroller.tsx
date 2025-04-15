@@ -18,7 +18,7 @@ const CategoryScroller = () => {
         {categories.map((category, index) => (
           <button
             key={index}
-            className="bg-white/10 text-white px-4 py-2 rounded-full backdrop-blur-md border border-white/20 whitespace-nowrap hover:bg-white/20 transition"
+            className="bg-[#050f0c]/90 text-white px-4 py-2 rounded-full backdrop-blur-md border border-white/10 whitespace-nowrap hover:bg-[#143426]/80 transition"
           >
             {category}
           </button>
@@ -29,4 +29,5 @@ const CategoryScroller = () => {
 };
 
 export default CategoryScroller;
+
 

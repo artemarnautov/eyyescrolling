@@ -6,11 +6,12 @@ const SearchBar = () => {
       <input
         type="text"
         placeholder="Search news..."
-        className="w-full max-w-2xl px-4 py-2 rounded-2xl bg-neutral-900 text-white placeholder-gray-400 border border-neutral-700 focus:outline-none focus:ring-2 focus:ring-[#1DB954]"
+        className="w-full max-w-2xl px-4 py-2 rounded-full bg-[#050f0c]/90 backdrop-blur-md border border-white/10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1DB954] transition"
       />
     </div>
   );
 };
 
 export default SearchBar;
+
 

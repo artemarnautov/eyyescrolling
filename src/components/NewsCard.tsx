@@ -84,7 +84,7 @@ function NewsCard({ item }: NewsCardProps) {
             {messages.map((msg, index) => (
               <div
                 key={index}
-                className={`max-w-[80%] px-4 py-2 rounded-xl text-sm ${
+                className={`w-fit px-4 py-2 rounded-xl text-sm ${
                   msg.sender === 'user'
                     ? 'ml-auto bg-[#37957A] text-white'
                     : 'bg-[#143426] text-white'

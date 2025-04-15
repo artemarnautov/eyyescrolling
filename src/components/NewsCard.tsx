@@ -9,12 +9,35 @@ interface NewsCardProps {
 function NewsCard({ item }: NewsCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
-  const [messages, setMessages] = useState<{ sender: 'user' | 'other'; text: string }[]>([]);
   const [input, setInput] = useState('');
+  const [messages, setMessages] = useState<{ sender: 'user' | 'other'; text: string }[]>([]);
+
+  useEffect(() => {
+    const stored = localStorage.getItem(`chat_${item.id}`);
+    if (stored) {
+      setMessages(JSON.parse(stored));
+    }
+  }, [item.id]);
 
   const handleSend = () => {
     if (input.trim() === '') return;
-    setMessages([...messages, { sender: 'user', text: input }]);
+
+    const userMessage = { sender: 'user', text: input };
+    const randomReplies = [
+      "Interesting point!",
+      "Thanks for the comment!",
+      "Good question!",
+      "I never thought of that!",
+    ];
+
+    const otherMessage = {
+      sender: 'other',
+      text: randomReplies[Math.floor(Math.random() * randomReplies.length)],
+    };
+
+    const newMessages = [...messages, userMessage, otherMessage];
+    setMessages(newMessages);
+    localStorage.setItem(`chat_${item.id}`, JSON.stringify(newMessages));
     setInput('');
   };
 
@@ -93,6 +116,7 @@ function NewsCard({ item }: NewsCardProps) {
 }
 
 export default NewsCard;
+
 
 
 

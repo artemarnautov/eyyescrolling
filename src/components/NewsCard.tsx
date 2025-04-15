@@ -80,7 +80,7 @@ function NewsCard({ item }: NewsCardProps) {
         </div>
 
         {isChatOpen && (
-          <div className="mt-6 w-full bg-white/5 p-4 rounded-xl max-h-80 overflow-y-auto space-y-2">
+          <div className="mt-6 w-full sm:-mx-6 sm:w-[calc(100%+3rem)] bg-white/5 p-4 rounded-xl max-h-80 overflow-y-auto space-y-2">
             {messages.map((msg, index) => (
               <div
                 key={index}
@@ -116,6 +116,7 @@ function NewsCard({ item }: NewsCardProps) {
 }
 
 export default NewsCard;
+
 
 
 

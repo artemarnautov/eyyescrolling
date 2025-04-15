@@ -31,7 +31,7 @@ const newsItems: NewsItem[] = [
 function App() {
   return (
     <div className="min-h-screen bg-black text-white px-4 py-10">
-      <div className="max-w-4xl mx-auto">
+      <div className="w-full sm:max-w-4xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-center mb-6 tracking-tight">
           <div className="flex justify-center mb-6">
   <img

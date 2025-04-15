@@ -50,7 +50,7 @@ function NewsCard({ item }: NewsCardProps) {
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
       </div>
-      <div className="p-6">
+      <div className="px-4 sm:px-6 pb-6 pt-4">
         <h2 className="text-xl font-semibold text-white mb-3">{item.headline}</h2>
 
         <div
@@ -80,7 +80,7 @@ function NewsCard({ item }: NewsCardProps) {
         </div>
 
         {isChatOpen && (
-          <div className="mt-6 w-full sm:-mx-6 sm:w-[calc(100%+3rem)] bg-white/5 p-4 rounded-xl max-h-80 overflow-y-auto space-y-2">
+          <div className="mt-4 -mx-4 sm:mx-0 w-[calc(100%+2rem)] sm:w-full bg-white/5 p-4 rounded-xl max-h-80 overflow-y-auto space-y-2">
             {messages.map((msg, index) => (
               <div
                 key={index}

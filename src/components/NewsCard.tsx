@@ -64,7 +64,7 @@ function NewsCard({ item }: NewsCardProps) {
         <div className="flex gap-2 mt-4 flex-wrap">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="flex items-center gap-2 px-3 py-1 rounded-x1 bg-[#1FCFD5] hover:bg-[#37e7eb] text-sm text-black font-semibold transition-all duration-200"
+            className="flex items-center gap-2 px-3 py-1 rounded-full bg-[#1FCFD5] hover:bg-[#37e7eb] text-sm text-black font-semibold transition-all duration-200"
           >
             {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
             <span>{isExpanded ? 'Less' : 'More'}</span>
@@ -72,7 +72,7 @@ function NewsCard({ item }: NewsCardProps) {
 
           <button
             onClick={() => setIsChatOpen(!isChatOpen)}
-            className="flex items-center gap-2 px-3 py-1 rounded-x1 bg-[#1FCFD5] hover:bg-[#37e7eb] text-sm text-black font-semibold transition-all duration-200"
+            className="flex items-center gap-2 px-3 py-1 rounded-full bg-[#1FCFD5] hover:bg-[#37e7eb] text-sm text-black font-semibold transition-all duration-200"
           >
             <MessageCircle className="w-4 h-4" />
             <span>Comment</span>
@@ -80,11 +80,11 @@ function NewsCard({ item }: NewsCardProps) {
         </div>
 
         {isChatOpen && (
-          <div className="mt-6 bg-white/5 p-4 rounded-xl max-h-80 overflow-y-auto space-y-2">
+          <div className="mt-6 bg-white/5 p-4 rounded-full max-h-80 overflow-y-auto space-y-2">
             {messages.map((msg, index) => (
               <div
                 key={index}
-                className={`w-fit px-3 py-1 rounded-xl text-sm ${
+                className={`w-fit px-3 py-1 rounded-full text-sm ${
                   msg.sender === 'user'
                     ? 'ml-auto bg-[#1FCFD5] text-black'
                     : 'bg-[#143426] text-white'
@@ -98,12 +98,12 @@ function NewsCard({ item }: NewsCardProps) {
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                className="flex-1 px-3 py-1 rounded-x1 bg-neutral-800 text-white placeholder-gray-400 focus:outline-none"
+                className="flex-1 px-3 py-1 rounded-full bg-neutral-800 text-white placeholder-gray-400 focus:outline-none"
                 placeholder="Write a comment..."
               />
               <button
                 onClick={handleSend}
-                className="px-3 py-1 rounded-x1 bg-[#1FCFD5] hover:bg-[#37e7eb] text-black font-semibold text-sm"
+                className="px-3 py-1 rounded-full bg-[#1FCFD5] hover:bg-[#37e7eb] text-black font-semibold text-sm"
               >
                 Send
               </button>

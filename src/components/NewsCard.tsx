@@ -41,7 +41,7 @@ function NewsCard({ item }: NewsCardProps) {
         <div className="flex gap-2 mt-4 flex-wrap">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#1DB954] hover:bg-[#1ed760] text-sm text-black font-semibold transition-all duration-200"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#37957A] hover:bg-[#48a691] text-sm text-white font-semibold transition-all duration-200"
           >
             {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
             <span>{isExpanded ? 'Less' : 'More'}</span>
@@ -49,7 +49,7 @@ function NewsCard({ item }: NewsCardProps) {
 
           <button
             onClick={() => setIsChatOpen(!isChatOpen)}
-            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#1DB954] hover:bg-[#1ed760] text-sm text-black font-semibold transition-all duration-200"
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#37957A] hover:bg-[#48a691] text-sm text-white font-semibold transition-all duration-200"
           >
             <MessageCircle className="w-4 h-4" />
             <span>Comment</span>
@@ -63,7 +63,7 @@ function NewsCard({ item }: NewsCardProps) {
                 key={index}
                 className={`max-w-[80%] px-4 py-2 rounded-xl text-sm ${
                   msg.sender === 'user'
-                    ? 'ml-auto bg-[#1DB954] text-black'
+                    ? 'ml-auto bg-[#37957A] text-white'
                     : 'bg-[#143426] text-white'
                 }`}
               >
@@ -80,7 +80,7 @@ function NewsCard({ item }: NewsCardProps) {
               />
               <button
                 onClick={handleSend}
-                className="px-4 py-2 rounded-full bg-[#1DB954] hover:bg-[#1ed760] text-black font-semibold text-sm"
+                className="px-4 py-2 rounded-full bg-[#37957A] hover:bg-[#48a691] text-white font-semibold text-sm"
               >
                 Send
               </button>
@@ -93,6 +93,7 @@ function NewsCard({ item }: NewsCardProps) {
 }
 
 export default NewsCard;
+
 
 
 

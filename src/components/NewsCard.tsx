@@ -98,7 +98,7 @@ function NewsCard({ item }: NewsCardProps) {
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                className="flex-1 px-3 py-1 rounded-x1 bg-neutral-800 text-white placeholder-gray-400 focus:outline-none"
+                className="flex-1 px-3 py-1 rounded-full bg-neutral-800 text-white placeholder-gray-400 focus:outline-none"
                 placeholder="Write a comment..."
               />
               <button

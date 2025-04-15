@@ -10,7 +10,7 @@ function NewsCard({ item }: NewsCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="relative overflow-hidden rounded-2xl bg-[#0b1a14]/80 backdrop-blur-md border border-white/10 shadow-2xl transition-all duration-300">
+    <div className="relative overflow-hidden rounded-2xl bg-emerald-950/90 backdrop-blur-md border border-white/10 shadow-2xl transition-all duration-300">
       <div className="aspect-square overflow-hidden">
         <img
           src={item.image}

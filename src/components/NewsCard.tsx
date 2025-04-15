@@ -10,7 +10,7 @@ function NewsCard({ item }: NewsCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="relative overflow-hidden rounded-2xl bg-white/10 backdrop-blur-md border border-white/10 shadow-2xl transition-all duration-300 hover:bg-white/15">
+    <div className="relative overflow-hidden rounded-2xl bg-[#0f1f17]/70 backdrop-blur-md border border-white/10 shadow-2xl transition-all duration-300 hover:bg-[#143426]/80">
       <div className="aspect-square overflow-hidden">
         <img
           src={item.image}
@@ -49,4 +49,5 @@ function NewsCard({ item }: NewsCardProps) {
 }
 
 export default NewsCard;
+
 

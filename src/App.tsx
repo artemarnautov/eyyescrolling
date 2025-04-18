@@ -8,9 +8,21 @@ const newsItems: NewsItem[] = [
   {
     id: 1,
     image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200',
-    headline: 'SpaceX Successfully Launches New Satellite Constellation',
+    headline: 'Did Elon Musk Share a Fake News Story About UK Detainment Camps?',
     content:
-      'In a groundbreaking mission, SpaceX has successfully deployed its latest constellation of satellites, marking a significant milestone in global internet coverage.',
+      'In August 2024, Elon Musk posted an image on X (formerly Twitter) that appeared to show a headline from The Telegraph. The headline claimed that UK Prime Minister Keir Starmer was planning to build "emergency detainment camps" on the Falkland Islands to house far-right rioters. Musk caption was brief but provocative: “Detainment camps…”
+
+The post went viral, gaining nearly two million views in under an hour. Soon after, it was deleted without comment. However, the damage had already been done—dozens of influencers and accounts had already reshared the image, fueling speculation and outrage.
+
+The Guardian later conducted an investigation into the origin of the article. Journalists traced the fake image back to Ashlea Simon, co-leader of the far-right group Britain First. According to their findings, the article had never appeared in The Telegraph and was entirely fabricated.
+
+A spokesperson for The Telegraph confirmed the article was fake and that they had taken steps to report the false use of their branding. Meanwhile, critics accused Musk of amplifying extremist disinformation. Others defended him, arguing that he was merely raising a question and deleted the post quickly once doubts arose.
+
+The UK government declined to comment directly on the tweet but reiterated its commitment to “addressing public disorder through lawful, democratic means.”
+
+Musk did not issue a formal apology or clarification but continued to post critically about law enforcement and government responses to riots in the UK.
+
+This incident reignited debate around Musk’s role as a platform owner and global influencer—and whether sharing unverified claims, even briefly, can contribute to the spread of misinformation.',
   },
   {
     id: 2,

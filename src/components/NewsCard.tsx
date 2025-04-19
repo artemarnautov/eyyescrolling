@@ -55,6 +55,7 @@ function NewsCard({ item }: NewsCardProps) {
 
         <div
           <div
+  <div
   className={`text-white/80 text-lg leading-relaxed transition-all duration-300 ease-in-out ${
     isExpanded ? 'opacity-100 max-h-[2000px]' : 'opacity-0 max-h-0 overflow-hidden'
   }`}

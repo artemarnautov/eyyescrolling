@@ -54,7 +54,7 @@ function NewsCard({ item }: NewsCardProps) {
         <h2 className="text-xl font-semibold text-white mb-3">{item.headline}</h2>
 
         <div
-          className={`overflow-hidden text-white/80 text-base leading-relaxed transition-all duration-300 ease-in-out ${
+          className={`overflow-hidden text-white/80 text-lg leading-relaxed transition-all duration-300 ease-in-out ${
             isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
           }`}
         >

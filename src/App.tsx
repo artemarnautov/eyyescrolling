@@ -56,7 +56,7 @@ const newsItems: NewsItem[] = [
 
 'Behind the scenes, the script is being penned by Jonathan Tropper, known for character-driven dramas like This Is Where I Leave You. According to Vanity Fair, production is expected to begin in the fall of 2025. Tropper has hinted that the film will explore moral ambiguity and the cost of power — familiar Star Wars themes, but through a more intimate, character-focused lens.'+
 
-'Fans have reason to be optimistic. With his proven ability to blend quiet introspection with explosive energy, and Levy’s track record of balancing spectacle with emotion, Starfighter could become a defining entry in the post-Skywalker era of the franchise.'
+'Fans have reason to be optimistic. With his proven ability to blend quiet introspection with explosive energy, and Levy’s track record of balancing spectacle with emotion, Starfighter could become a defining entry in the post-Skywalker era of the franchise.'+
 
 'And while few plot details have been released, one thing is clear: the Force is with Ryan Gosling.',
   },

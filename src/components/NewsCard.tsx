@@ -54,74 +54,22 @@ function NewsCard({ item }: NewsCardProps) {
         <h2 className="text-xl font-semibold text-white mb-3">{item.headline}</h2>
 
         <div
-          <div
-  <div
-  className={`text-white/80 text-lg leading-relaxed transition-all duration-300 ease-in-out ${
-    isExpanded ? 'opacity-100 max-h-[2000px]' : 'opacity-0 max-h-0 overflow-hidden'
-  }`}
->
-  {item.content.split('\n\n').map((paragraph, index) => (
-    <p key={index} className="mb-4">
-      {paragraph}
-    </p>
-  ))}
-</div>
+          className={`text-white/80 text-lg leading-relaxed transition-all duration-300 ease-in-out ${
+            isExpanded ? 'opacity-100 max-h-[2000px]' : 'opacity-0 max-h-0 overflow-hidden'
+          }`}
+        >
+          {item.content.split('\n\n').map((paragraph, index) => (
+            <p key={index} className="mb-4">
+              {paragraph}
+            </p>
+          ))}
+        </div>
 
         <div className="flex gap-2 mt-4 flex-wrap">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="flex items-center gap-2 px-3 py-1 rounded-full bg-[#1FCFD5] hover:bg-[#37e7eb] text-sm text-black font-semibold transition-all duration-200"
-          >
-            {isExpanded ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
-            <span>{isExpanded ? 'Less' : 'More'}</span>
-          </button>
+            className="flex
 
-          <button
-            onClick={() => setIsChatOpen(!isChatOpen)}
-            className="flex items-center gap-2 px-3 py-1 rounded-full bg-[#1FCFD5] hover:bg-[#37e7eb] text-sm text-black font-semibold transition-all duration-200"
-          >
-            <MessageCircle className="w-4 h-4" />
-            <span>Comment</span>
-          </button>
-        </div>
-
-        {isChatOpen && (
-          <div className="mt-4 -mx-4 sm:mx-0 w-[calc(100%+2rem)] sm:w-full bg-white/5 p-4 rounded-xl max-h-80 overflow-y-auto space-y-2">
-            {messages.map((msg, index) => (
-              <div
-                key={index}
-                className={`w-fit px-3 py-1 rounded-full text-sm ${
-                  msg.sender === 'user'
-                    ? 'ml-auto bg-[#1FCFD5] text-black'
-                    : 'bg-[#143426] text-white'
-                }`}
-              >
-                {msg.text}
-              </div>
-            ))}
-            <div className="mt-4 flex gap-2">
-              <input
-                type="text"
-                value={input}
-                onChange={(e) => setInput(e.target.value)}
-                className="flex-1 px-3 py-1 rounded-full bg-neutral-800 text-white placeholder-gray-400 focus:outline-none"
-                placeholder="Write a comment..."
-              />
-              <button
-                onClick={handleSend}
-                className="px-3 py-1 rounded-full bg-[#1FCFD5] hover:bg-[#37e7eb] text-black font-semibold text-sm"
-              >
-                Send
-              </button>
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
-
-export default NewsCard;
 
 
 

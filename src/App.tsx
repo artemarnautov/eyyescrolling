@@ -43,10 +43,22 @@ const newsItems: NewsItem[] = [
   },
   {
     id: 3,
-    image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    headline: 'Global Tech Summit Announces Revolutionary Innovation',
+    image: '/images/picture-3.png',
+    headline: '',
     content:
-      'The annual Global Tech Summit has unveiled several groundbreaking innovations that promise to reshape the technology landscape.',
+      'A new star has entered the galaxy far, far away.'+
+
+'During a dramatic reveal at the Star Wars Celebration event in Tokyo, Lucasfilm confirmed that Ryan Gosling will lead the upcoming film Star Wars: Starfighter, a standalone project set to chart a bold new course in the franchise. The announcement immediately sent waves through the fan community, igniting curiosity and anticipation — not only for the content, but for how Gosling, known for his nuanced roles in Drive and Blade Runner 2049, will fit into one of cinema’s most storied universes.'+
+
+'The film, directed by Shawn Levy (Stranger Things, Deadpool & Wolverine), is slated for release on May 28, 2027. According to reporting from The Guardian, the project will take place about five years after the events of The Rise of Skywalker and promises to introduce a completely new cast of characters, unbound by the Skywalker legacy. Levy described the vision as “a world we haven’t seen on screen — a new corner of the Star Wars universe,” emphasizing creative freedom and fresh storytelling.'+
+
+'Gosling, who has been a longtime fan of the franchise, expressed genuine excitement. In a touching moment on stage, he shared a childhood photo of himself on a bed covered in Star Wars-themed sheets. “I was probably dreaming about Star Wars before I even saw the film,” he joked. People Magazine noted that Gosling has been circling big-franchise roles for years, but this one felt “personal” for the actor.'+
+
+'Behind the scenes, the script is being penned by Jonathan Tropper, known for character-driven dramas like This Is Where I Leave You. According to Vanity Fair, production is expected to begin in the fall of 2025. Tropper has hinted that the film will explore moral ambiguity and the cost of power — familiar Star Wars themes, but through a more intimate, character-focused lens.'+
+
+'Fans have reason to be optimistic. With his proven ability to blend quiet introspection with explosive energy, and Levy’s track record of balancing spectacle with emotion, Starfighter could become a defining entry in the post-Skywalker era of the franchise.'
+
+'And while few plot details have been released, one thing is clear: the Force is with Ryan Gosling.',
   },
 ];
 

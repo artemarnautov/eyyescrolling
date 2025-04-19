@@ -7,7 +7,7 @@ import { NewsItem } from './types';
 const newsItems: NewsItem[] = [
   {
     id: 1,
-    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200',
+    image: '/images/picture-1.png',
     headline: 'Did Elon Musk Share a Fake News Story About UK Detainment Camps?',
     content:
       'In August 2024, Elon Musk posted an image on X (formerly Twitter) that appeared to show a headline from The Telegraph. The headline claimed that UK Prime Minister Keir Starmer was planning to build "emergency detainment camps" on the Falkland Islands to house far-right rioters. Musk caption was brief but provocative: “Detainment camps…”'+

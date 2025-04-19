@@ -58,7 +58,11 @@ function NewsCard({ item }: NewsCardProps) {
             isExpanded ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
           }`}
         >
-          <p className="mb-4">{item.content}</p>
+          {item.content.split('\n\n').map((paragraph, index) => (
+  <p key={index} className="mb-4">
+    {paragraph}
+  </p>
+))}
         </div>
 
         <div className="flex gap-2 mt-4 flex-wrap">

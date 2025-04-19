@@ -10,7 +10,7 @@ const newsItems: NewsItem[] = [
     image: '/images/picture-1.png',
     headline: '',
     content:
-      `In August 2024, Elon Musk posted an image on X (formerly Twitter) that appeared to show a headline from The Telegraph. The headline claimed that UK Prime Minister Keir Starmer was planning to build "emergency detainment camps" on the Falkland Islands to house far-right rioters. Musk's caption was brief but provocative: "Detainment camps..."
+      `In August 2024, Elon Musk posted an image on X (formerly Twitter) that appeared to show a headline from The Telegraph. The headline claimed that UK Prime Minister Keir Starmer was planning to build "emergency detainment camps" on the Falkland Islands to house far-right rioters. Musk's caption was brief but provocative: Detainment camps...
       
 
 The post went viral, gaining nearly two million views in under an hour. Soon after, it was deleted without comment. However, the damage had already been done—dozens of influencers and accounts had already reshared the image, fueling speculation and outrage.

@@ -26,10 +26,20 @@ const newsItems: NewsItem[] = [
   },
   {
     id: 2,
-    image: 'https://images.unsplash.com/photo-1508780709619-79562169bc64?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-    headline: 'Revolutionary AI System Helps Predict Climate Changes',
+    image: '/images/picture-2.png',
+    headline: '',
     content:
-      'Scientists have developed a new artificial intelligence system capable of predicting climate changes with unprecedented accuracy.',
+      'In April 2025, NVIDIA — the company behind the chips powering today’s AI boom — made a historic announcement: it will begin manufacturing its AI supercomputers entirely within the United States.'+
+
+'This move, led by CEO Jensen Huang, marks a major industrial pivot. “We’re not just building computers,” Huang said. “We’re building the infrastructure of the future — and that future should be built at home.” Over the next four years, NVIDIA plans to invest up to $500 billion into U.S.-based AI infrastructure, according to The Times.'+
+
+'To execute this vision, NVIDIA is establishing a sprawling American supply chain. Blackwell AI chips, the heart of NVIDIA’s systems, are now being produced at TSMC’s fab in Phoenix, Arizona. Packaging and testing will be handled by Amkor and SPIL nearby. Meanwhile, Foxconn in Houston and Wistron in Dallas are preparing over a million square feet of manufacturing space to assemble the AI supercomputers.'+
+
+'This domestic production shift comes amid rising U.S.–China trade tensions and new semiconductor export controls that could cost NVIDIA up to $5.5 billion, as reported by AP News. Rather than remain dependent on overseas manufacturing, NVIDIA is localizing its operations — a move also echoed by Apple and Microsoft.'+
+
+'The company envisions these new “gigawatt AI factories” — vast data centers built for AI workloads — as the foundation for industries ranging from robotics to biotech. As detailed in an official NVIDIA blog, this effort will not only secure supply chains but also create hundreds of thousands of American jobs.'+
+
+'With this announcement, NVIDIA isn’t just adapting to geopolitical pressure — it’s planting a flag. The age of American-made AI has officially begun.',
   },
   {
     id: 3,
